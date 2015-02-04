@@ -14,6 +14,14 @@
 		61C84A841A8206A5005E9B1C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C84A831A8206A5005E9B1C /* Images.xcassets */; };
 		61C84A871A8206A5005E9B1C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61C84A851A8206A5005E9B1C /* LaunchScreen.xib */; };
 		61C84A931A8206A5005E9B1C /* WatchTicTacToeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C84A921A8206A5005E9B1C /* WatchTicTacToeTests.m */; };
+		61C84AA71A8206F0005E9B1C /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C84AA61A8206F0005E9B1C /* InterfaceController.m */; };
+		61C84AAA1A8206F0005E9B1C /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C84AA91A8206F0005E9B1C /* NotificationController.m */; };
+		61C84AAD1A8206F0005E9B1C /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C84AAC1A8206F0005E9B1C /* GlanceController.m */; };
+		61C84AAF1A8206F0005E9B1C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C84AAE1A8206F0005E9B1C /* Images.xcassets */; };
+		61C84AB31A8206F0005E9B1C /* WatchTicTacToe WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 61C84AB21A8206F0005E9B1C /* WatchTicTacToe WatchKit App.app */; };
+		61C84ABB1A8206F0005E9B1C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61C84AB91A8206F0005E9B1C /* Interface.storyboard */; };
+		61C84ABD1A8206F0005E9B1C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C84ABC1A8206F0005E9B1C /* Images.xcassets */; };
+		61C84AC01A8206F0005E9B1C /* WatchTicTacToe WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 61C84AA01A8206F0005E9B1C /* WatchTicTacToe WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +32,35 @@
 			remoteGlobalIDString = 61C84A721A8206A5005E9B1C;
 			remoteInfo = WatchTicTacToe;
 		};
+		61C84AB41A8206F0005E9B1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61C84A6B1A8206A5005E9B1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61C84AB11A8206F0005E9B1C;
+			remoteInfo = "WatchTicTacToe WatchKit App";
+		};
+		61C84ABE1A8206F0005E9B1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61C84A6B1A8206A5005E9B1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61C84A9F1A8206F0005E9B1C;
+			remoteInfo = "WatchTicTacToe WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		61C84AC71A8206F0005E9B1C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				61C84AC01A8206F0005E9B1C /* WatchTicTacToe WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		61C84A731A8206A5005E9B1C /* WatchTicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchTicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +76,20 @@
 		61C84A8C1A8206A5005E9B1C /* WatchTicTacToeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchTicTacToeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		61C84A911A8206A5005E9B1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61C84A921A8206A5005E9B1C /* WatchTicTacToeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WatchTicTacToeTests.m; sourceTree = "<group>"; };
+		61C84AA01A8206F0005E9B1C /* WatchTicTacToe WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchTicTacToe WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61C84AA31A8206F0005E9B1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61C84AA41A8206F0005E9B1C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		61C84AA51A8206F0005E9B1C /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		61C84AA61A8206F0005E9B1C /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		61C84AA81A8206F0005E9B1C /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		61C84AA91A8206F0005E9B1C /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		61C84AAB1A8206F0005E9B1C /* GlanceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
+		61C84AAC1A8206F0005E9B1C /* GlanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
+		61C84AAE1A8206F0005E9B1C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		61C84AB21A8206F0005E9B1C /* WatchTicTacToe WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchTicTacToe WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61C84AB81A8206F0005E9B1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61C84ABA1A8206F0005E9B1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		61C84ABC1A8206F0005E9B1C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +107,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		61C84A9D1A8206F0005E9B1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +122,8 @@
 			children = (
 				61C84A751A8206A5005E9B1C /* WatchTicTacToe */,
 				61C84A8F1A8206A5005E9B1C /* WatchTicTacToeTests */,
+				61C84AA11A8206F0005E9B1C /* WatchTicTacToe WatchKit Extension */,
+				61C84AB61A8206F0005E9B1C /* WatchTicTacToe WatchKit App */,
 				61C84A741A8206A5005E9B1C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +133,8 @@
 			children = (
 				61C84A731A8206A5005E9B1C /* WatchTicTacToe.app */,
 				61C84A8C1A8206A5005E9B1C /* WatchTicTacToeTests.xctest */,
+				61C84AA01A8206F0005E9B1C /* WatchTicTacToe WatchKit Extension.appex */,
+				61C84AB21A8206F0005E9B1C /* WatchTicTacToe WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +180,48 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		61C84AA11A8206F0005E9B1C /* WatchTicTacToe WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				61C84AA51A8206F0005E9B1C /* InterfaceController.h */,
+				61C84AA61A8206F0005E9B1C /* InterfaceController.m */,
+				61C84AA81A8206F0005E9B1C /* NotificationController.h */,
+				61C84AA91A8206F0005E9B1C /* NotificationController.m */,
+				61C84AAB1A8206F0005E9B1C /* GlanceController.h */,
+				61C84AAC1A8206F0005E9B1C /* GlanceController.m */,
+				61C84AAE1A8206F0005E9B1C /* Images.xcassets */,
+				61C84AA21A8206F0005E9B1C /* Supporting Files */,
+			);
+			path = "WatchTicTacToe WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		61C84AA21A8206F0005E9B1C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				61C84AA31A8206F0005E9B1C /* Info.plist */,
+				61C84AA41A8206F0005E9B1C /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		61C84AB61A8206F0005E9B1C /* WatchTicTacToe WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				61C84AB91A8206F0005E9B1C /* Interface.storyboard */,
+				61C84ABC1A8206F0005E9B1C /* Images.xcassets */,
+				61C84AB71A8206F0005E9B1C /* Supporting Files */,
+			);
+			path = "WatchTicTacToe WatchKit App";
+			sourceTree = "<group>";
+		};
+		61C84AB71A8206F0005E9B1C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				61C84AB81A8206F0005E9B1C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,10 +232,12 @@
 				61C84A6F1A8206A5005E9B1C /* Sources */,
 				61C84A701A8206A5005E9B1C /* Frameworks */,
 				61C84A711A8206A5005E9B1C /* Resources */,
+				61C84AC71A8206F0005E9B1C /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				61C84ABF1A8206F0005E9B1C /* PBXTargetDependency */,
 			);
 			name = WatchTicTacToe;
 			productName = WatchTicTacToe;
@@ -157,6 +262,39 @@
 			productReference = 61C84A8C1A8206A5005E9B1C /* WatchTicTacToeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		61C84A9F1A8206F0005E9B1C /* WatchTicTacToe WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61C84AC41A8206F0005E9B1C /* Build configuration list for PBXNativeTarget "WatchTicTacToe WatchKit Extension" */;
+			buildPhases = (
+				61C84A9C1A8206F0005E9B1C /* Sources */,
+				61C84A9D1A8206F0005E9B1C /* Frameworks */,
+				61C84A9E1A8206F0005E9B1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61C84AB51A8206F0005E9B1C /* PBXTargetDependency */,
+			);
+			name = "WatchTicTacToe WatchKit Extension";
+			productName = "WatchTicTacToe WatchKit Extension";
+			productReference = 61C84AA01A8206F0005E9B1C /* WatchTicTacToe WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		61C84AB11A8206F0005E9B1C /* WatchTicTacToe WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61C84AC11A8206F0005E9B1C /* Build configuration list for PBXNativeTarget "WatchTicTacToe WatchKit App" */;
+			buildPhases = (
+				61C84AB01A8206F0005E9B1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchTicTacToe WatchKit App";
+			productName = "WatchTicTacToe WatchKit App";
+			productReference = 61C84AB21A8206F0005E9B1C /* WatchTicTacToe WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -171,6 +309,12 @@
 					61C84A8B1A8206A5005E9B1C = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 61C84A721A8206A5005E9B1C;
+					};
+					61C84A9F1A8206F0005E9B1C = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					61C84AB11A8206F0005E9B1C = {
+						CreatedOnToolsVersion = 6.2;
 					};
 				};
 			};
@@ -189,6 +333,8 @@
 			targets = (
 				61C84A721A8206A5005E9B1C /* WatchTicTacToe */,
 				61C84A8B1A8206A5005E9B1C /* WatchTicTacToeTests */,
+				61C84A9F1A8206F0005E9B1C /* WatchTicTacToe WatchKit Extension */,
+				61C84AB11A8206F0005E9B1C /* WatchTicTacToe WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -208,6 +354,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61C84A9E1A8206F0005E9B1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C84AAF1A8206F0005E9B1C /* Images.xcassets in Resources */,
+				61C84AB31A8206F0005E9B1C /* WatchTicTacToe WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61C84AB01A8206F0005E9B1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C84ABB1A8206F0005E9B1C /* Interface.storyboard in Resources */,
+				61C84ABD1A8206F0005E9B1C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +396,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		61C84A9C1A8206F0005E9B1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C84AAA1A8206F0005E9B1C /* NotificationController.m in Sources */,
+				61C84AA71A8206F0005E9B1C /* InterfaceController.m in Sources */,
+				61C84AAD1A8206F0005E9B1C /* GlanceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -239,6 +413,16 @@
 			isa = PBXTargetDependency;
 			target = 61C84A721A8206A5005E9B1C /* WatchTicTacToe */;
 			targetProxy = 61C84A8D1A8206A5005E9B1C /* PBXContainerItemProxy */;
+		};
+		61C84AB51A8206F0005E9B1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61C84AB11A8206F0005E9B1C /* WatchTicTacToe WatchKit App */;
+			targetProxy = 61C84AB41A8206F0005E9B1C /* PBXContainerItemProxy */;
+		};
+		61C84ABF1A8206F0005E9B1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61C84A9F1A8206F0005E9B1C /* WatchTicTacToe WatchKit Extension */;
+			targetProxy = 61C84ABE1A8206F0005E9B1C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -257,6 +441,14 @@
 				61C84A861A8206A5005E9B1C /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		61C84AB91A8206F0005E9B1C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61C84ABA1A8206F0005E9B1C /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -392,6 +584,62 @@
 			};
 			name = Release;
 		};
+		61C84AC21A8206F0005E9B1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = WatchTicTacToe_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchTicTacToe WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		61C84AC31A8206F0005E9B1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				IBSC_MODULE = WatchTicTacToe_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchTicTacToe WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		61C84AC51A8206F0005E9B1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WatchTicTacToe WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		61C84AC61A8206F0005E9B1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "WatchTicTacToe WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -417,6 +665,22 @@
 			buildConfigurations = (
 				61C84A9A1A8206A5005E9B1C /* Debug */,
 				61C84A9B1A8206A5005E9B1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		61C84AC11A8206F0005E9B1C /* Build configuration list for PBXNativeTarget "WatchTicTacToe WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61C84AC21A8206F0005E9B1C /* Debug */,
+				61C84AC31A8206F0005E9B1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		61C84AC41A8206F0005E9B1C /* Build configuration list for PBXNativeTarget "WatchTicTacToe WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61C84AC51A8206F0005E9B1C /* Debug */,
+				61C84AC61A8206F0005E9B1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
