@@ -8,7 +8,7 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                <controller spacing="2" id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
                         <label width="1" alignment="left" text="TicTacToe" textAlignment="center" id="PLT-GS-ugN">
                             <color key="textColor" red="0.0" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
