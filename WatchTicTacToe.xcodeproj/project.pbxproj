@@ -22,6 +22,7 @@
 		61C84ABB1A8206F0005E9B1C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61C84AB91A8206F0005E9B1C /* Interface.storyboard */; };
 		61C84ABD1A8206F0005E9B1C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C84ABC1A8206F0005E9B1C /* Images.xcassets */; };
 		61C84AC01A8206F0005E9B1C /* WatchTicTacToe WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 61C84AA01A8206F0005E9B1C /* WatchTicTacToe WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		61C84ACA1A82642C005E9B1C /* ResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C84AC91A82642C005E9B1C /* ResultController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,8 @@
 		61C84AB81A8206F0005E9B1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61C84ABA1A8206F0005E9B1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		61C84ABC1A8206F0005E9B1C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		61C84AC81A82642C005E9B1C /* ResultController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultController.h; sourceTree = "<group>"; };
+		61C84AC91A82642C005E9B1C /* ResultController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +192,8 @@
 				61C84AA91A8206F0005E9B1C /* NotificationController.m */,
 				61C84AAB1A8206F0005E9B1C /* GlanceController.h */,
 				61C84AAC1A8206F0005E9B1C /* GlanceController.m */,
+				61C84AC81A82642C005E9B1C /* ResultController.h */,
+				61C84AC91A82642C005E9B1C /* ResultController.m */,
 				61C84AAE1A8206F0005E9B1C /* Images.xcassets */,
 				61C84AA21A8206F0005E9B1C /* Supporting Files */,
 			);
@@ -400,6 +405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61C84ACA1A82642C005E9B1C /* ResultController.m in Sources */,
 				61C84AAA1A8206F0005E9B1C /* NotificationController.m in Sources */,
 				61C84AA71A8206F0005E9B1C /* InterfaceController.m in Sources */,
 				61C84AAD1A8206F0005E9B1C /* GlanceController.m in Sources */,

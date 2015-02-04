@@ -7,7 +7,7 @@
 //
 
 #import "GlanceController.h"
-
+#import "InterfaceController.h"
 
 @interface GlanceController()
 
@@ -25,6 +25,11 @@
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
     [super willActivate];
+
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSInteger win = [userDefaults integerForKey:KEY_SELF_WIN_COUNT];
+    NSInteger lose = [userDefaults integerForKey:KEY_PC_WIN_COUNT];
+    [_labelStat setText:[NSString stringWithFormat:@"💩 %ld  :  %ld 🐷", (long)win, (long)lose]];
 }
 
 - (void)didDeactivate {

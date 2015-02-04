@@ -22,6 +22,9 @@
                                             <items>
                                                 <button width="1" height="1" alignment="left" title="🐷" id="5Qa-s4-wpc">
                                                     <fontDescription key="font" type="system" pointSize="32"/>
+                                                    <connections>
+                                                        <action selector="pressButton0" destination="AgC-eL-Hgc" id="8Md-jt-OK5"/>
+                                                    </connections>
                                                 </button>
                                             </items>
                                             <variation key="default">
@@ -39,6 +42,9 @@
                                             <items>
                                                 <button width="1" height="1" alignment="left" title="🐷" id="QKa-rl-tTb">
                                                     <fontDescription key="font" type="system" pointSize="32"/>
+                                                    <connections>
+                                                        <action selector="pressButton1" destination="AgC-eL-Hgc" id="7X0-3b-0Kt"/>
+                                                    </connections>
                                                 </button>
                                             </items>
                                             <variation key="default">
@@ -56,6 +62,9 @@
                                             <items>
                                                 <button width="1" height="1" alignment="left" title="🐷" id="V4v-pO-Le6">
                                                     <fontDescription key="font" type="system" pointSize="32"/>
+                                                    <connections>
+                                                        <action selector="pressButton2" destination="AgC-eL-Hgc" id="oGU-rI-Ii2"/>
+                                                    </connections>
                                                 </button>
                                             </items>
                                             <variation key="default">
@@ -77,6 +86,9 @@
                                             <items>
                                                 <button width="1" height="1" alignment="left" title="🐷" id="6bI-ub-pgx">
                                                     <fontDescription key="font" type="system" pointSize="32"/>
+                                                    <connections>
+                                                        <action selector="pressButton3" destination="AgC-eL-Hgc" id="Hfs-oD-Mxk"/>
+                                                    </connections>
                                                 </button>
                                             </items>
                                             <variation key="default">
@@ -94,6 +106,9 @@
                                             <items>
                                                 <button width="1" height="1" alignment="left" title="💩" id="c6I-Ue-p6l">
                                                     <fontDescription key="font" type="system" pointSize="32"/>
+                                                    <connections>
+                                                        <action selector="pressButton4" destination="AgC-eL-Hgc" id="ru5-Nt-fME"/>
+                                                    </connections>
                                                 </button>
                                             </items>
                                             <variation key="default">
@@ -111,6 +126,9 @@
                                             <items>
                                                 <button width="1" height="1" alignment="left" title="🐷" id="FeS-9o-b5g">
                                                     <fontDescription key="font" type="system" pointSize="32"/>
+                                                    <connections>
+                                                        <action selector="pressButton5" destination="AgC-eL-Hgc" id="LyZ-37-pKx"/>
+                                                    </connections>
                                                 </button>
                                             </items>
                                             <variation key="default">
@@ -132,6 +150,9 @@
                                             <items>
                                                 <button width="1" height="1" alignment="left" title="🐷" id="edd-YY-9dD">
                                                     <fontDescription key="font" type="system" pointSize="32"/>
+                                                    <connections>
+                                                        <action selector="pressButton6" destination="AgC-eL-Hgc" id="cLP-hE-HcC"/>
+                                                    </connections>
                                                 </button>
                                             </items>
                                             <variation key="default">
@@ -149,6 +170,9 @@
                                             <items>
                                                 <button width="1" height="1" alignment="left" title="🐷" id="ToD-kn-XKJ">
                                                     <fontDescription key="font" type="system" pointSize="32"/>
+                                                    <connections>
+                                                        <action selector="pressButton7" destination="AgC-eL-Hgc" id="PTK-dy-ijn"/>
+                                                    </connections>
                                                 </button>
                                             </items>
                                             <variation key="default">
@@ -166,6 +190,9 @@
                                             <items>
                                                 <button width="1" height="1" alignment="left" title="🐷" id="Du6-L7-Soe">
                                                     <fontDescription key="font" type="system" pointSize="32"/>
+                                                    <connections>
+                                                        <action selector="pressButton8" destination="AgC-eL-Hgc" id="chr-hj-5Do"/>
+                                                    </connections>
                                                 </button>
                                             </items>
                                             <variation key="default">
@@ -208,6 +235,17 @@
                             <include reference="jiy-GM-Pb7"/>
                         </mask>
                     </variation>
+                    <connections>
+                        <outlet property="button0" destination="5Qa-s4-wpc" id="kMo-Ep-tuK"/>
+                        <outlet property="button1" destination="QKa-rl-tTb" id="o2Z-4f-6LD"/>
+                        <outlet property="button2" destination="V4v-pO-Le6" id="SRS-w4-OZS"/>
+                        <outlet property="button3" destination="6bI-ub-pgx" id="p3o-Fi-4ER"/>
+                        <outlet property="button4" destination="c6I-Ue-p6l" id="h12-PU-oYa"/>
+                        <outlet property="button5" destination="FeS-9o-b5g" id="aHq-XU-Ebj"/>
+                        <outlet property="button6" destination="edd-YY-9dD" id="j7k-2h-ooc"/>
+                        <outlet property="button7" destination="ToD-kn-XKJ" id="hZc-gO-Lqg"/>
+                        <outlet property="button8" destination="Du6-L7-Soe" id="kSF-GA-vTv"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
@@ -260,6 +298,9 @@
                         </group>
                     </items>
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="labelStat" destination="kAw-9N-Mzd" id="8dU-oT-r8K"/>
+                    </connections>
                 </glanceController>
             </objects>
             <point key="canvasLocation" x="234.51282051282053" y="671.71794871794873"/>
@@ -287,12 +328,12 @@
             </objects>
             <point key="canvasLocation" x="553" y="1001"/>
         </scene>
-        <!--resultController-->
+        <!--　-->
         <scene sceneID="GQ8-w3-dcC">
             <objects>
-                <controller identifier="resultController" id="8qh-MK-dmm">
+                <controller identifier="resultController" title="　" id="8qh-MK-dmm" customClass="ResultController">
                     <items>
-                        <group width="1" height="80" alignment="left" id="qnb-xI-Gkk">
+                        <group width="1" height="70" alignment="left" id="qnb-xI-Gkk">
                             <items>
                                 <group width="60" height="1" alignment="left" id="oIm-1f-j17">
                                     <items>
@@ -342,10 +383,20 @@
                                 </mask>
                             </variation>
                         </group>
-                        <label width="1" alignment="left" text="💩 3  :  1 🐷" textAlignment="center" id="Onn-pZ-3vi"/>
+                        <label width="1" alignment="left" text="💩 3  :  1 🐷" textAlignment="center" id="Onn-pZ-3vi">
+                            <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                        </label>
                         <button width="1" alignment="left" title="Restart" id="lWP-oJ-898">
                             <color key="backgroundColor" red="0.0" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="font" type="boldSystem" pointSize="18"/>
+                            <connections>
+                                <action selector="pressButtonRestart" destination="8qh-MK-dmm" id="RgL-8z-ZKn"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Reset" id="ddO-nc-cRj">
+                            <connections>
+                                <action selector="pressButtonReset" destination="8qh-MK-dmm" id="g8m-Tz-blZ"/>
+                            </connections>
                         </button>
                     </items>
                     <variation key="default">
@@ -353,6 +404,7 @@
                             <exclude reference="qnb-xI-Gkk"/>
                             <exclude reference="Onn-pZ-3vi"/>
                             <exclude reference="lWP-oJ-898"/>
+                            <exclude reference="ddO-nc-cRj"/>
                         </mask>
                     </variation>
                     <variation key="device=watch42mm">
@@ -360,8 +412,13 @@
                             <include reference="qnb-xI-Gkk"/>
                             <include reference="Onn-pZ-3vi"/>
                             <include reference="lWP-oJ-898"/>
+                            <include reference="ddO-nc-cRj"/>
                         </mask>
                     </variation>
+                    <connections>
+                        <outlet property="labelResult" destination="tZ8-sS-msu" id="WEs-vR-GxF"/>
+                        <outlet property="labelStat" destination="Onn-pZ-3vi" id="m37-I9-wfe"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="434.15384615384619" y="345.66666666666669"/>
