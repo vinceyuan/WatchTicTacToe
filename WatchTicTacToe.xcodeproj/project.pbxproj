@@ -665,6 +665,7 @@
 				61C84A981A8206A5005E9B1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		61C84A991A8206A5005E9B1C /* Build configuration list for PBXNativeTarget "WatchTicTacToeTests" */ = {
 			isa = XCConfigurationList;
@@ -673,6 +674,7 @@
 				61C84A9B1A8206A5005E9B1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		61C84AC11A8206F0005E9B1C /* Build configuration list for PBXNativeTarget "WatchTicTacToe WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -681,6 +683,7 @@
 				61C84AC31A8206F0005E9B1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		61C84AC41A8206F0005E9B1C /* Build configuration list for PBXNativeTarget "WatchTicTacToe WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -689,6 +692,7 @@
 				61C84AC61A8206F0005E9B1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
