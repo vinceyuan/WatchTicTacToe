@@ -29,8 +29,7 @@
 }
 
 - (void)restartGame {
-    for (int i = 0; i < 9; i++)
-        _matrix[i] = 0;
+    memset(_matrix, 0, 9 * sizeof(int));
     for (WKInterfaceButton *button in _buttons) {
         [button setTitle:@""];
     }
@@ -81,10 +80,19 @@
 }
 
 - (void)pcMove {
-    NSUInteger index = 0;
-    do {
-        index = arc4random_uniform(9);
-    } while (_matrix[index] != 0);
+    int index = 0;
+    // Try to win
+    index = [self nextIndexToWin];
+    // Try to block
+    if (index < 0) {
+        index = [self nextIndexToBlock];
+    }
+    // Random location
+    if (index < 0) {
+        do {
+            index = arc4random_uniform(9);
+        } while (_matrix[index] != 0);
+    }
 
     _matrix[index] = 2;
     WKInterfaceButton *button = [_buttons objectAtIndex:index];
@@ -134,11 +142,11 @@
 }
 
 - (GameResult)calculateGameResult {
-    if ([self has3InLine:1]) {
+    if ([self has3InLine:1 inMatrix:_matrix]) {
         return GameResultWin;
     }
 
-    if ([self has3InLine:2]) {
+    if ([self has3InLine:2 inMatrix:_matrix]) {
         return GameResultLose;
     }
 
@@ -153,19 +161,41 @@
     return GameResultNotEnd;
 }
 
-- (BOOL)has3InLine:(int)value {
+- (BOOL)has3InLine:(int)value inMatrix:(int *)matrix {
     if (
-        (_matrix[0] == value && _matrix[1] == value && _matrix[2] == value)
-        || (_matrix[3] == value && _matrix[4] == value && _matrix[5] == value)
-        || (_matrix[6] == value && _matrix[7] == value && _matrix[8] == value)
-        || (_matrix[0] == value && _matrix[3] == value && _matrix[6] == value)
-        || (_matrix[1] == value && _matrix[4] == value && _matrix[7] == value)
-        || (_matrix[2] == value && _matrix[5] == value && _matrix[8] == value)
-        || (_matrix[0] == value && _matrix[4] == value && _matrix[8] == value)
-        || (_matrix[2] == value && _matrix[4] == value && _matrix[6] == value)
+        (matrix[0] == value && matrix[1] == value && matrix[2] == value)
+        || (matrix[3] == value && matrix[4] == value && matrix[5] == value)
+        || (matrix[6] == value && matrix[7] == value && matrix[8] == value)
+        || (matrix[0] == value && matrix[3] == value && matrix[6] == value)
+        || (matrix[1] == value && matrix[4] == value && matrix[7] == value)
+        || (matrix[2] == value && matrix[5] == value && matrix[8] == value)
+        || (matrix[0] == value && matrix[4] == value && matrix[8] == value)
+        || (matrix[2] == value && matrix[4] == value && matrix[6] == value)
         )
         return YES;
     return NO;
+}
+
+- (int)nextIndexToWin {
+    return [self nextIndexToHave3InLine:2];
+}
+
+- (int)nextIndexToBlock {
+    return [self nextIndexToHave3InLine:1];
+}
+
+- (int)nextIndexToHave3InLine:(int)value {
+    int matrix[9];
+    for (int i = 0; i < 9; i++) {
+        memcpy(matrix, _matrix, 9 * sizeof(int));
+        if (matrix[i] == 0) {
+            matrix[i] = value;
+            if ([self has3InLine:value inMatrix:matrix]) {
+                return i;
+            }
+        }
+    }
+    return -1;
 }
 
 
