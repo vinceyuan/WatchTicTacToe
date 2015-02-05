@@ -2,7 +2,7 @@
 
 `WatchTicTacToe` is a Tic-Tac-Toe game for Apple Watch!
 
-![Screenshot](https://github.com/vinceyuan/WatchTicTacToe/master/WatchTicTacToe.gif)
+![Screenshot](https://github.com/vinceyuan/WatchTicTacToe/raw/master/WatchTicTacToe.gif)
 
 ## Compile and run
 
