@@ -64,6 +64,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		619CD49A1A83F40800C38B26 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		61C84A731A8206A5005E9B1C /* WatchTicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchTicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61C84A771A8206A5005E9B1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61C84A781A8206A5005E9B1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -123,6 +124,7 @@
 		61C84A6A1A8206A5005E9B1C = {
 			isa = PBXGroup;
 			children = (
+				619CD49A1A83F40800C38B26 /* README.md */,
 				61C84A751A8206A5005E9B1C /* WatchTicTacToe */,
 				61C84A8F1A8206A5005E9B1C /* WatchTicTacToeTests */,
 				61C84AA11A8206F0005E9B1C /* WatchTicTacToe WatchKit Extension */,
