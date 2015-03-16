@@ -14,11 +14,11 @@
 		<string>https://github.com/vinceyuan/WatchTicTacToe.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>WatchTicTacToe.xcodeproj</string>
+	<string>WatchTicTacToeObjC/WatchTicTacToe.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B915A6CB50140CE677A01D6725578AE6C09727F9</key>
-		<string>../..</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/vinceyuan/WatchTicTacToe.git</string>
