@@ -1,12 +1,12 @@
 # WatchTicTacToe
 
-`WatchTicTacToe` is a Tic-Tac-Toe game for Apple Watch!
+`WatchTicTacToe` is a Tic-Tac-Toe game for Apple Watch! Originally it was written with Objective-C. Now there is also a Swift version.
 
 ![Screenshot](https://github.com/vinceyuan/WatchTicTacToe/raw/master/WatchTicTacToe.gif)
 
 ## Compile and run
 
-- Open WatchTicTacToe.xcodeproj in Xcode (currently 6.2 beta 5).
+- Open WatchTicTacToeObjC/WatchTicTacToe.xcodeproj or WatchTicTacToeSwift/WatchTicTacToeSwift.xcodeproj in Xcode (currently 6.2).
 - Choose `WatchTicTacToe WatchKit App` scheme and iPhone 6.
 - Press the `Run` button to run the game.
 - Make sure you opened the Apple Watch simulator (Hardware menu > External Displays > Apple Watch - 42mm).
