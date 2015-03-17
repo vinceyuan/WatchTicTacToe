@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller spacing="2" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchTicTacToe_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="TicTacToe" textAlignment="center" id="PLT-GS-ugN">
+                            <color key="textColor" red="0.0" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="14"/>
+                        </label>
+                        <group width="1" alignment="left" layout="vertical" spacing="2" id="jiy-GM-Pb7">
+                            <items>
+                                <group width="1" height="50" alignment="left" id="XQu-VX-hUM">
+                                    <items>
+                                        <group width="50" height="1" alignment="left" id="rck-w7-GJL">
+                                            <items>
+                                                <button width="1" height="1" alignment="left" title="🐷" id="5Qa-s4-wpc">
+                                                    <fontDescription key="font" type="system" pointSize="32"/>
+                                                    <connections>
+                                                        <action selector="pressButton0" destination="AgC-eL-Hgc" id="X0s-O9-rNc"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                            <variation key="default">
+                                                <mask key="items">
+                                                    <exclude reference="5Qa-s4-wpc"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="device=watch42mm">
+                                                <mask key="items">
+                                                    <include reference="5Qa-s4-wpc"/>
+                                                </mask>
+                                            </variation>
+                                        </group>
+                                        <group width="50" height="1" alignment="left" id="KuC-x1-dxA">
+                                            <items>
+                                                <button width="1" height="1" alignment="left" title="🐷" id="QKa-rl-tTb">
+                                                    <fontDescription key="font" type="system" pointSize="32"/>
+                                                    <connections>
+                                                        <action selector="pressButton1" destination="AgC-eL-Hgc" id="Z4v-96-Pcp"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                            <variation key="default">
+                                                <mask key="items">
+                                                    <exclude reference="QKa-rl-tTb"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="device=watch42mm">
+                                                <mask key="items">
+                                                    <include reference="QKa-rl-tTb"/>
+                                                </mask>
+                                            </variation>
+                                        </group>
+                                        <group width="50" height="1" alignment="left" id="IOW-pJ-TJO">
+                                            <items>
+                                                <button width="1" height="1" alignment="left" title="🐷" id="V4v-pO-Le6">
+                                                    <fontDescription key="font" type="system" pointSize="32"/>
+                                                    <connections>
+                                                        <action selector="pressButton2" destination="AgC-eL-Hgc" id="7t6-1G-TH7"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                            <variation key="default">
+                                                <mask key="items">
+                                                    <exclude reference="V4v-pO-Le6"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="device=watch42mm">
+                                                <mask key="items">
+                                                    <include reference="V4v-pO-Le6"/>
+                                                </mask>
+                                            </variation>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="1" height="50" alignment="left" id="9e2-az-T81">
+                                    <items>
+                                        <group width="50" height="1" alignment="left" id="bKR-yi-XJT">
+                                            <items>
+                                                <button width="1" height="1" alignment="left" title="🐷" id="6bI-ub-pgx">
+                                                    <fontDescription key="font" type="system" pointSize="32"/>
+                                                    <connections>
+                                                        <action selector="pressButton3" destination="AgC-eL-Hgc" id="vGW-5W-hdx"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                            <variation key="default">
+                                                <mask key="items">
+                                                    <exclude reference="6bI-ub-pgx"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="device=watch42mm">
+                                                <mask key="items">
+                                                    <include reference="6bI-ub-pgx"/>
+                                                </mask>
+                                            </variation>
+                                        </group>
+                                        <group width="50" height="1" alignment="left" id="a1A-D0-0EJ">
+                                            <items>
+                                                <button width="1" height="1" alignment="left" title="💩" id="c6I-Ue-p6l">
+                                                    <fontDescription key="font" type="system" pointSize="32"/>
+                                                    <connections>
+                                                        <action selector="pressButton4" destination="AgC-eL-Hgc" id="691-7R-CNl"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                            <variation key="default">
+                                                <mask key="items">
+                                                    <exclude reference="c6I-Ue-p6l"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="device=watch42mm">
+                                                <mask key="items">
+                                                    <include reference="c6I-Ue-p6l"/>
+                                                </mask>
+                                            </variation>
+                                        </group>
+                                        <group width="50" height="1" alignment="left" id="rha-9x-jXL">
+                                            <items>
+                                                <button width="1" height="1" alignment="left" title="🐷" id="FeS-9o-b5g">
+                                                    <fontDescription key="font" type="system" pointSize="32"/>
+                                                    <connections>
+                                                        <action selector="pressButton5" destination="AgC-eL-Hgc" id="XXb-Hh-jHN"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                            <variation key="default">
+                                                <mask key="items">
+                                                    <exclude reference="FeS-9o-b5g"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="device=watch42mm">
+                                                <mask key="items">
+                                                    <include reference="FeS-9o-b5g"/>
+                                                </mask>
+                                            </variation>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="1" height="50" alignment="left" id="Y3Y-Th-vZH">
+                                    <items>
+                                        <group width="50" height="1" alignment="left" id="Tp4-2u-Tmz">
+                                            <items>
+                                                <button width="1" height="1" alignment="left" title="🐷" id="edd-YY-9dD">
+                                                    <fontDescription key="font" type="system" pointSize="32"/>
+                                                    <connections>
+                                                        <action selector="pressButton6" destination="AgC-eL-Hgc" id="gKr-eK-Fhq"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                            <variation key="default">
+                                                <mask key="items">
+                                                    <exclude reference="edd-YY-9dD"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="device=watch42mm">
+                                                <mask key="items">
+                                                    <include reference="edd-YY-9dD"/>
+                                                </mask>
+                                            </variation>
+                                        </group>
+                                        <group width="50" height="1" alignment="left" id="afy-05-4zS">
+                                            <items>
+                                                <button width="1" height="1" alignment="left" title="🐷" id="ToD-kn-XKJ">
+                                                    <fontDescription key="font" type="system" pointSize="32"/>
+                                                    <connections>
+                                                        <action selector="pressButton7" destination="AgC-eL-Hgc" id="5jp-sN-df8"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                            <variation key="default">
+                                                <mask key="items">
+                                                    <exclude reference="ToD-kn-XKJ"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="device=watch42mm">
+                                                <mask key="items">
+                                                    <include reference="ToD-kn-XKJ"/>
+                                                </mask>
+                                            </variation>
+                                        </group>
+                                        <group width="50" height="1" alignment="left" id="Byw-uu-ZiK">
+                                            <items>
+                                                <button width="1" height="1" alignment="left" title="🐷" id="Du6-L7-Soe">
+                                                    <fontDescription key="font" type="system" pointSize="32"/>
+                                                    <connections>
+                                                        <action selector="pressButton8" destination="AgC-eL-Hgc" id="QNC-DO-HxN"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                            <variation key="default">
+                                                <mask key="items">
+                                                    <exclude reference="Du6-L7-Soe"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="device=watch42mm">
+                                                <mask key="items">
+                                                    <include reference="Du6-L7-Soe"/>
+                                                </mask>
+                                            </variation>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                            <variation key="default">
+                                <mask key="items">
+                                    <exclude reference="XQu-VX-hUM"/>
+                                    <exclude reference="9e2-az-T81"/>
+                                    <exclude reference="Y3Y-Th-vZH"/>
+                                </mask>
+                            </variation>
+                            <variation key="device=watch42mm">
+                                <mask key="items">
+                                    <include reference="XQu-VX-hUM"/>
+                                    <include reference="9e2-az-T81"/>
+                                    <include reference="Y3Y-Th-vZH"/>
+                                </mask>
+                            </variation>
+                        </group>
+                    </items>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="jiy-GM-Pb7"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch42mm">
+                        <mask key="items">
+                            <include reference="jiy-GM-Pb7"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="_button0" destination="5Qa-s4-wpc" id="ceN-jM-h87"/>
+                        <outlet property="_button1" destination="QKa-rl-tTb" id="MiB-6a-b8e"/>
+                        <outlet property="_button2" destination="V4v-pO-Le6" id="kwd-oo-R9q"/>
+                        <outlet property="_button3" destination="6bI-ub-pgx" id="dud-mX-RAI"/>
+                        <outlet property="_button4" destination="c6I-Ue-p6l" id="Fac-BH-Xzd"/>
+                        <outlet property="_button5" destination="FeS-9o-b5g" id="8V7-W7-HL3"/>
+                        <outlet property="_button6" destination="edd-YY-9dD" id="E6e-PJ-55N"/>
+                        <outlet property="_button7" destination="ToD-kn-XKJ" id="WQl-Iw-nFj"/>
+                        <outlet property="_button8" destination="Du6-L7-Soe" id="5tv-GK-aI7"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="235" y="347"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="BOz-TT-tkC">
+            <objects>
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModule="WatchTicTacToe_WatchKit_Extension">
+                    <items>
+                        <group alignment="left" id="t8f-Gd-c4y">
+                            <items>
+                                <label width="1" height="1" alignment="left" text="TicTacToe" textAlignment="center" id="9lQ-JN-Q21">
+                                    <color key="textColor" red="0.0" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="14"/>
+                                </label>
+                            </items>
+                            <variation key="default">
+                                <mask key="items">
+                                    <exclude reference="9lQ-JN-Q21"/>
+                                </mask>
+                            </variation>
+                            <variation key="device=watch42mm">
+                                <mask key="items">
+                                    <include reference="9lQ-JN-Q21"/>
+                                </mask>
+                            </variation>
+                        </group>
+                        <group alignment="left" layout="vertical" id="uCw-4Q-Ouw">
+                            <items>
+                                <label width="1" height="91" alignment="left" text="💩 3  :  1 🐷" textAlignment="center" id="kAw-9N-Mzd">
+                                    <fontDescription key="font" type="system" pointSize="28"/>
+                                </label>
+                                <label width="1" alignment="left" text="Tap to start" textAlignment="center" id="JvI-5E-zq0">
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                </label>
+                            </items>
+                            <variation key="default">
+                                <mask key="items">
+                                    <exclude reference="kAw-9N-Mzd"/>
+                                    <exclude reference="JvI-5E-zq0"/>
+                                </mask>
+                            </variation>
+                            <variation key="device=watch42mm">
+                                <mask key="items">
+                                    <include reference="kAw-9N-Mzd"/>
+                                    <include reference="JvI-5E-zq0"/>
+                                </mask>
+                            </variation>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="labelStat" destination="kAw-9N-Mzd" id="8dU-oT-r8K"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="234.51282051282053" y="671.71794871794873"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="XkS-y5-khE"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
+                        <segue destination="gdX-wl-uQE" kind="relationship" relationship="dynamicNotificationInterface" id="fKh-qV-3T2"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="235" y="1001"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="KIl-fV-djm">
+            <objects>
+                <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="WatchTicTacToe_WatchKit_Extension"/>
+            </objects>
+            <point key="canvasLocation" x="553" y="1001"/>
+        </scene>
+        <!--　-->
+        <scene sceneID="GQ8-w3-dcC">
+            <objects>
+                <controller identifier="resultController" title="　" id="8qh-MK-dmm" customClass="ResultController" customModule="WatchTicTacToe_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="70" alignment="left" id="qnb-xI-Gkk">
+                            <items>
+                                <group width="60" height="1" alignment="left" id="oIm-1f-j17">
+                                    <items>
+                                        <label width="1" height="1" alignment="right" verticalAlignment="center" text="💩" textAlignment="center" id="C4n-26-Kcm">
+                                            <fontDescription key="font" type="system" pointSize="32"/>
+                                        </label>
+                                    </items>
+                                    <variation key="default">
+                                        <mask key="items">
+                                            <exclude reference="C4n-26-Kcm"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="device=watch42mm">
+                                        <mask key="items">
+                                            <include reference="C4n-26-Kcm"/>
+                                        </mask>
+                                    </variation>
+                                </group>
+                                <group width="93" height="1" alignment="left" id="ril-Id-YGy">
+                                    <items>
+                                        <label width="1" height="1" alignment="left" text="YOU WIN!" textAlignment="left" id="tZ8-sS-msu">
+                                            <fontDescription key="font" type="boldSystem" pointSize="18"/>
+                                        </label>
+                                    </items>
+                                    <variation key="default">
+                                        <mask key="items">
+                                            <exclude reference="tZ8-sS-msu"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="device=watch42mm">
+                                        <mask key="items">
+                                            <include reference="tZ8-sS-msu"/>
+                                        </mask>
+                                    </variation>
+                                </group>
+                            </items>
+                            <variation key="default">
+                                <mask key="items">
+                                    <exclude reference="oIm-1f-j17"/>
+                                    <exclude reference="ril-Id-YGy"/>
+                                </mask>
+                            </variation>
+                            <variation key="device=watch42mm">
+                                <mask key="items">
+                                    <include reference="oIm-1f-j17"/>
+                                    <include reference="ril-Id-YGy"/>
+                                </mask>
+                            </variation>
+                        </group>
+                        <label width="1" alignment="left" text="💩 3  :  1 🐷" textAlignment="center" id="Onn-pZ-3vi">
+                            <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                        </label>
+                        <button width="1" alignment="left" title="Restart" id="lWP-oJ-898">
+                            <color key="backgroundColor" red="0.0" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="18"/>
+                            <connections>
+                                <action selector="pressButtonRestart" destination="8qh-MK-dmm" id="RgL-8z-ZKn"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Reset" id="ddO-nc-cRj">
+                            <connections>
+                                <action selector="pressButtonReset" destination="8qh-MK-dmm" id="g8m-Tz-blZ"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="qnb-xI-Gkk"/>
+                            <exclude reference="Onn-pZ-3vi"/>
+                            <exclude reference="lWP-oJ-898"/>
+                            <exclude reference="ddO-nc-cRj"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch42mm">
+                        <mask key="items">
+                            <include reference="qnb-xI-Gkk"/>
+                            <include reference="Onn-pZ-3vi"/>
+                            <include reference="lWP-oJ-898"/>
+                            <include reference="ddO-nc-cRj"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="labelResult" destination="tZ8-sS-msu" id="WEs-vR-GxF"/>
+                        <outlet property="labelStat" destination="Onn-pZ-3vi" id="m37-I9-wfe"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="434.15384615384619" y="345.66666666666669"/>
+        </scene>
+    </scenes>
+</document>
