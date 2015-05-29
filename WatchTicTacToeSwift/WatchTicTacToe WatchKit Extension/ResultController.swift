@@ -19,7 +19,7 @@ class ResultController : WKInterfaceController {
         super.awakeWithContext(context)
 
         // Configure interface objects here.
-        let dict = context as Dictionary<String, Int>
+        let dict = context as! Dictionary<String, Int>
         let result = GameResult(rawValue: dict["result"]!);
         if result == GameResult.Win {
             labelResult!.setText("YOU WIN!")
