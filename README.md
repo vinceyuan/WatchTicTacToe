@@ -9,12 +9,12 @@
 - Open WatchTicTacToeObjC/WatchTicTacToe.xcodeproj or WatchTicTacToeSwift/WatchTicTacToeSwift.xcodeproj in Xcode (currently 6.3).
 - Choose `WatchTicTacToe WatchKit App` scheme and iPhone 6.
 - Press the `Run` button to run the game.
-- Make sure you opened the Apple Watch simulator (Hardware menu > External Displays > Apple Watch - 42mm).
+- Make sure you opened the Apple Watch simulator (Hardware menu > External Displays > Apple Watch - 38mm/42mm).
 - If you want to run the Glance, choose `Glance - WatchTicTacToe WatchKit App` scheme and run.
 
 ## Notes
 
-It's designed for Apple Watch 42mm only.
+It runs well on Apple Watch 38mm and 42mm.
 
 If you failed to run the app in the Watch simulator, clean the project in Xcode, choose `WatchTicTacToe WatchKit App` scheme and run again.
 
