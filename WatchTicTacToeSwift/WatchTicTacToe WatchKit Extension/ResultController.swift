@@ -15,15 +15,15 @@ class ResultController : WKInterfaceController {
     @IBOutlet weak var labelResult : WKInterfaceLabel!;
     @IBOutlet weak var labelStat : WKInterfaceLabel!;
 
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
 
         // Configure interface objects here.
         let dict = context as! Dictionary<String, Int>
         let result = GameResult(rawValue: dict["result"]!);
-        if result == GameResult.Win {
+        if result == GameResult.win {
             labelResult!.setText("YOU WIN!")
-        } else if result == GameResult.Lose {
+        } else if result == GameResult.lose {
             labelResult!.setText("YOU LOSE!")
         } else {
             labelResult!.setText("THE END")
@@ -35,9 +35,9 @@ class ResultController : WKInterfaceController {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
 
-        let userDefaults = NSUserDefaults.standardUserDefaults();
-        let win = userDefaults.integerForKey(KEY_SELF_WIN_COUNT);
-        let lose = userDefaults.integerForKey(KEY_PC_WIN_COUNT);
+        let userDefaults = UserDefaults.standard;
+        let win = userDefaults.integer(forKey: KEY_SELF_WIN_COUNT);
+        let lose = userDefaults.integer(forKey: KEY_PC_WIN_COUNT);
         labelStat?.setText("💩 \(win)  :  \(lose) 🐷")
     }
 
@@ -47,13 +47,13 @@ class ResultController : WKInterfaceController {
     }
 
     @IBAction func pressButtonRestart() {
-        self.dismissController()
+        self.dismiss()
     }
 
     @IBAction func pressButtonReset() {
-        let userDefaults = NSUserDefaults.standardUserDefaults();
-        userDefaults.setInteger(0, forKey: KEY_SELF_WIN_COUNT)
-        userDefaults.setInteger(0, forKey: KEY_PC_WIN_COUNT)
+        let userDefaults = UserDefaults.standard;
+        userDefaults.set(0, forKey: KEY_SELF_WIN_COUNT)
+        userDefaults.set(0, forKey: KEY_PC_WIN_COUNT)
         userDefaults.synchronize()
         labelStat!.setText("💩 0  :  0 🐷")
     }

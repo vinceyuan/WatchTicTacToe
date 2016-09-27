@@ -13,12 +13,12 @@ let KEY_SELF_WIN_COUNT = "Self win count"
 let KEY_PC_WIN_COUNT = "PC win count"
 
 enum GameResult : Int {
-    case NotEnd, Win, Lose, End
+    case notEnd, win, lose, end
 }
 
 class InterfaceController: WKInterfaceController {
-    var _buttons : Array<WKInterfaceButton!> = []
-    var _matrix : Array<Int> = [Int](count: 9, repeatedValue: 0)
+    var _buttons : Array<WKInterfaceButton?> = []
+    var _matrix : Array<Int> = [Int](repeating: 0, count: 9)
     var _shouldPcMove : Bool = false
 
     @IBOutlet weak var _button0 : WKInterfaceButton!
@@ -35,8 +35,8 @@ class InterfaceController: WKInterfaceController {
         super.init()
     }
 
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
 
         // Configure interface objects here.
 
@@ -52,7 +52,7 @@ class InterfaceController: WKInterfaceController {
         }
         _shouldPcMove = (arc4random_uniform(2) != 0)
         if _shouldPcMove {
-            NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: #selector(InterfaceController.pcMove), userInfo: nil, repeats: false)
+            Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(InterfaceController.pcMove), userInfo: nil, repeats: false)
         }
     }
 
@@ -117,13 +117,13 @@ class InterfaceController: WKInterfaceController {
         }
 
         _shouldPcMove = !_shouldPcMove
-        NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: #selector(InterfaceController.checkGameResult), userInfo: nil, repeats: false)
+        Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(InterfaceController.checkGameResult), userInfo: nil, repeats: false)
     }
 
-    func pressButton(button : WKInterfaceButton?) {
+    func pressButton(_ button : WKInterfaceButton?) {
         //let index = find(_buttons, button)
         var index = 0
-        for (i, value) in _buttons.enumerate() {
+        for (i, value) in _buttons.enumerated() {
             if value!.isEqual(button!) {
                 index = i
                 break
@@ -136,45 +136,45 @@ class InterfaceController: WKInterfaceController {
         _matrix[index] = 1
         button!.setTitle("💩")
         _shouldPcMove = !_shouldPcMove
-        NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: #selector(InterfaceController.checkGameResult), userInfo: nil, repeats: false)
+        Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(InterfaceController.checkGameResult), userInfo: nil, repeats: false)
     }
 
     func checkGameResult() {
         let result: GameResult = self.calculateGameResult()
-        if result == GameResult.NotEnd {
+        if result == GameResult.notEnd {
             if _shouldPcMove {
                 self.pcMove()
             }
             return
-        } else if result == GameResult.Win {
+        } else if result == GameResult.win {
             // win
-            let userDefaults = NSUserDefaults.standardUserDefaults()
-            var count = userDefaults.integerForKey(KEY_SELF_WIN_COUNT)
+            let userDefaults = UserDefaults.standard
+            var count = userDefaults.integer(forKey: KEY_SELF_WIN_COUNT)
             count += 1
-            userDefaults.setInteger(count, forKey: KEY_SELF_WIN_COUNT)
+            userDefaults.set(count, forKey: KEY_SELF_WIN_COUNT)
             userDefaults.synchronize()
-        } else if result == GameResult.Lose {
+        } else if result == GameResult.lose {
             // lose
-            let userDefaults = NSUserDefaults.standardUserDefaults()
-            var count = userDefaults.integerForKey(KEY_PC_WIN_COUNT)
+            let userDefaults = UserDefaults.standard
+            var count = userDefaults.integer(forKey: KEY_PC_WIN_COUNT)
             count += 1
-            userDefaults.setInteger(count, forKey: KEY_PC_WIN_COUNT)
+            userDefaults.set(count, forKey: KEY_PC_WIN_COUNT)
             userDefaults.synchronize()
         } else {
             // end
         }
 
         let dict = ["result": result.rawValue]
-        self.presentControllerWithName("resultController", context: dict)
+        self.presentController(withName: "resultController", context: dict)
     }
 
     func calculateGameResult() -> GameResult {
         if self.has3InLineInMatrix(1, matrix: _matrix) {
-            return GameResult.Win
+            return GameResult.win
         }
 
         if self.has3InLineInMatrix(2, matrix: _matrix) {
-            return GameResult.Lose
+            return GameResult.lose
         }
 
         var total = 0
@@ -184,12 +184,12 @@ class InterfaceController: WKInterfaceController {
             }
         }
         if total == 9 {
-            return GameResult.End
+            return GameResult.end
         }
-        return GameResult.NotEnd
+        return GameResult.notEnd
     }
 
-    func has3InLineInMatrix(value: Int, matrix: [Int]) -> Bool {
+    func has3InLineInMatrix(_ value: Int, matrix: [Int]) -> Bool {
         var condition =
             (matrix[0] == value && matrix[1] == value && matrix[2] == value)
                 || (matrix[3] == value && matrix[4] == value && matrix[5] == value)
@@ -219,8 +219,8 @@ class InterfaceController: WKInterfaceController {
         return nextIndexToHave3InLine(1)
     }
 
-    func nextIndexToHave3InLine(value : Int) -> Int {
-        var matrix = [Int](count: 9, repeatedValue: 0)
+    func nextIndexToHave3InLine(_ value : Int) -> Int {
+        var matrix = [Int](repeating: 0, count: 9)
         for i in 0 ..< 9 {
             for i in 0 ..< 9 {
                 matrix[i] = _matrix[i]
