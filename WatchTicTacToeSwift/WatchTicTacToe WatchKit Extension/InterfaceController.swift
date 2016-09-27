@@ -52,7 +52,7 @@ class InterfaceController: WKInterfaceController {
         }
         _shouldPcMove = (arc4random_uniform(2) != 0)
         if _shouldPcMove {
-            NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: Selector("pcMove"), userInfo: nil, repeats: false)
+            NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: #selector(InterfaceController.pcMove), userInfo: nil, repeats: false)
         }
     }
 
@@ -106,7 +106,7 @@ class InterfaceController: WKInterfaceController {
         }
         // Random location
         if index < 0 {
-            do {
+            repeat {
                 index = Int(arc4random_uniform(9))
             } while _matrix[index] != 0
         }
@@ -117,13 +117,13 @@ class InterfaceController: WKInterfaceController {
         }
 
         _shouldPcMove = !_shouldPcMove
-        NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: Selector("checkGameResult"), userInfo: nil, repeats: false)
+        NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: #selector(InterfaceController.checkGameResult), userInfo: nil, repeats: false)
     }
 
     func pressButton(button : WKInterfaceButton?) {
         //let index = find(_buttons, button)
         var index = 0
-        for (i, value) in enumerate(_buttons) {
+        for (i, value) in _buttons.enumerate() {
             if value!.isEqual(button!) {
                 index = i
                 break
@@ -136,7 +136,7 @@ class InterfaceController: WKInterfaceController {
         _matrix[index] = 1
         button!.setTitle("💩")
         _shouldPcMove = !_shouldPcMove
-        NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: Selector("checkGameResult"), userInfo: nil, repeats: false)
+        NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: #selector(InterfaceController.checkGameResult), userInfo: nil, repeats: false)
     }
 
     func checkGameResult() {
@@ -150,14 +150,14 @@ class InterfaceController: WKInterfaceController {
             // win
             let userDefaults = NSUserDefaults.standardUserDefaults()
             var count = userDefaults.integerForKey(KEY_SELF_WIN_COUNT)
-            count++
+            count += 1
             userDefaults.setInteger(count, forKey: KEY_SELF_WIN_COUNT)
             userDefaults.synchronize()
         } else if result == GameResult.Lose {
             // lose
             let userDefaults = NSUserDefaults.standardUserDefaults()
             var count = userDefaults.integerForKey(KEY_PC_WIN_COUNT)
-            count++
+            count += 1
             userDefaults.setInteger(count, forKey: KEY_PC_WIN_COUNT)
             userDefaults.synchronize()
         } else {
@@ -180,7 +180,7 @@ class InterfaceController: WKInterfaceController {
         var total = 0
         for i in 0 ..< 9 {
             if _matrix[i] != 0 {
-                total++
+                total += 1
             }
         }
         if total == 9 {

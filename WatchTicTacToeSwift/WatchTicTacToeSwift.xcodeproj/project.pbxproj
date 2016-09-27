@@ -21,7 +21,6 @@
 		61EB37A41AB6A87700E5A532 /* WatchTicTacToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EB37A31AB6A87700E5A532 /* WatchTicTacToeTests.swift */; };
 		61EB37A61AB6A8DE00E5A532 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EB37A51AB6A8DE00E5A532 /* InterfaceController.swift */; };
 		61EB37A81AB6AE0700E5A532 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EB37A71AB6AE0700E5A532 /* NotificationController.swift */; };
-		61EB37AA1AB6AE1500E5A532 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EB37A91AB6AE1500E5A532 /* GlanceController.swift */; };
 		61EB37AC1AB6AE2100E5A532 /* ResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EB37AB1AB6AE2100E5A532 /* ResultController.swift */; };
 /* End PBXBuildFile section */
 
@@ -91,7 +90,6 @@
 		61EB37A31AB6A87700E5A532 /* WatchTicTacToeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchTicTacToeTests.swift; sourceTree = "<group>"; };
 		61EB37A51AB6A8DE00E5A532 /* InterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		61EB37A71AB6AE0700E5A532 /* NotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		61EB37A91AB6AE1500E5A532 /* GlanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
 		61EB37AB1AB6AE2100E5A532 /* ResultController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -185,7 +183,6 @@
 			children = (
 				61EB37A51AB6A8DE00E5A532 /* InterfaceController.swift */,
 				61EB37A71AB6AE0700E5A532 /* NotificationController.swift */,
-				61EB37A91AB6AE1500E5A532 /* GlanceController.swift */,
 				61EB37AB1AB6AE2100E5A532 /* ResultController.swift */,
 				61C84AAE1A8206F0005E9B1C /* Images.xcassets */,
 				61C84AA21A8206F0005E9B1C /* Supporting Files */,
@@ -304,13 +301,16 @@
 				TargetAttributes = {
 					61C84A721A8206A5005E9B1C = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 0800;
 					};
 					61C84A8B1A8206A5005E9B1C = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 0800;
 						TestTargetID = 61C84A721A8206A5005E9B1C;
 					};
 					61C84A9F1A8206F0005E9B1C = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 0800;
 					};
 					61C84AB11A8206F0005E9B1C = {
 						CreatedOnToolsVersion = 6.2;
@@ -402,7 +402,6 @@
 				61EB37A81AB6AE0700E5A532 /* NotificationController.swift in Sources */,
 				61EB37A61AB6A8DE00E5A532 /* InterfaceController.swift in Sources */,
 				61EB37AC1AB6AE2100E5A532 /* ResultController.swift in Sources */,
-				61EB37AA1AB6AE1500E5A532 /* GlanceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +543,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -555,6 +555,7 @@
 				INFOPLIST_FILE = WatchTicTacToe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -575,6 +576,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchTicTacToe.app/WatchTicTacToe";
 			};
 			name = Debug;
@@ -591,6 +593,7 @@
 				INFOPLIST_FILE = WatchTicTacToeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchTicTacToe.app/WatchTicTacToe";
 			};
 			name = Release;
@@ -640,6 +643,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -651,6 +655,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
