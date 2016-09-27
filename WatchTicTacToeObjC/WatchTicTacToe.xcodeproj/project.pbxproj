@@ -16,7 +16,6 @@
 		61C84A931A8206A5005E9B1C /* WatchTicTacToeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C84A921A8206A5005E9B1C /* WatchTicTacToeTests.m */; };
 		61C84AA71A8206F0005E9B1C /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C84AA61A8206F0005E9B1C /* InterfaceController.m */; };
 		61C84AAA1A8206F0005E9B1C /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C84AA91A8206F0005E9B1C /* NotificationController.m */; };
-		61C84AAD1A8206F0005E9B1C /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C84AAC1A8206F0005E9B1C /* GlanceController.m */; };
 		61C84AAF1A8206F0005E9B1C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C84AAE1A8206F0005E9B1C /* Images.xcassets */; };
 		61C84AB31A8206F0005E9B1C /* WatchTicTacToe WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 61C84AB21A8206F0005E9B1C /* WatchTicTacToe WatchKit App.app */; };
 		61C84ABB1A8206F0005E9B1C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61C84AB91A8206F0005E9B1C /* Interface.storyboard */; };
@@ -84,8 +83,6 @@
 		61C84AA61A8206F0005E9B1C /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
 		61C84AA81A8206F0005E9B1C /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
 		61C84AA91A8206F0005E9B1C /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
-		61C84AAB1A8206F0005E9B1C /* GlanceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
-		61C84AAC1A8206F0005E9B1C /* GlanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
 		61C84AAE1A8206F0005E9B1C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		61C84AB21A8206F0005E9B1C /* WatchTicTacToe WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchTicTacToe WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61C84AB81A8206F0005E9B1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -190,8 +187,6 @@
 				61C84AA61A8206F0005E9B1C /* InterfaceController.m */,
 				61C84AA81A8206F0005E9B1C /* NotificationController.h */,
 				61C84AA91A8206F0005E9B1C /* NotificationController.m */,
-				61C84AAB1A8206F0005E9B1C /* GlanceController.h */,
-				61C84AAC1A8206F0005E9B1C /* GlanceController.m */,
 				61C84AC81A82642C005E9B1C /* ResultController.h */,
 				61C84AC91A82642C005E9B1C /* ResultController.m */,
 				61C84AAE1A8206F0005E9B1C /* Images.xcassets */,
@@ -408,7 +403,6 @@
 				61C84ACA1A82642C005E9B1C /* ResultController.m in Sources */,
 				61C84AAA1A8206F0005E9B1C /* NotificationController.m in Sources */,
 				61C84AA71A8206F0005E9B1C /* InterfaceController.m in Sources */,
-				61C84AAD1A8206F0005E9B1C /* GlanceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

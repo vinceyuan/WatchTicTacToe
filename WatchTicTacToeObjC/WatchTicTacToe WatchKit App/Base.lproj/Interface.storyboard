@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11077"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
@@ -11,7 +11,7 @@
                 <controller spacing="2" id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
                         <label width="1" alignment="left" text="TicTacToe" textAlignment="center" id="PLT-GS-ugN">
-                            <color key="textColor" red="0.0" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" red="0.0" green="0.80000000000000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="font" type="boldSystem" pointSize="13"/>
                             <variation key="device=watch38mm">
                                 <fontDescription key="font" type="boldSystem" pointSize="13"/>
@@ -202,45 +202,6 @@
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
         </scene>
-        <!--Glance Interface Controller-->
-        <scene sceneID="BOz-TT-tkC">
-            <objects>
-                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController">
-                    <items>
-                        <group alignment="left" id="t8f-Gd-c4y">
-                            <items>
-                                <label width="1" height="1" alignment="left" text="TicTacToe" textAlignment="center" id="9lQ-JN-Q21">
-                                    <color key="textColor" red="0.0" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <fontDescription key="font" type="boldSystem" pointSize="14"/>
-                                </label>
-                            </items>
-                        </group>
-                        <group alignment="left" layout="vertical" id="uCw-4Q-Ouw">
-                            <items>
-                                <label width="1" height="73" alignment="left" text="💩 3  :  1 🐷" textAlignment="center" id="kAw-9N-Mzd">
-                                    <fontDescription key="font" type="system" pointSize="27"/>
-                                    <variation key="device=watch38mm" height="73">
-                                        <fontDescription key="font" type="system" pointSize="27"/>
-                                    </variation>
-                                    <variation key="device=watch42mm" height="91">
-                                        <fontDescription key="font" type="system" pointSize="28"/>
-                                    </variation>
-                                </label>
-                                <label width="1" alignment="left" text="Tap to start" textAlignment="center" id="JvI-5E-zq0">
-                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
-                                </label>
-                            </items>
-                        </group>
-                    </items>
-                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
-                    <connections>
-                        <outlet property="labelStat" destination="kAw-9N-Mzd" id="8dU-oT-r8K"/>
-                    </connections>
-                </glanceController>
-            </objects>
-            <point key="canvasLocation" x="234.51282051282053" y="671.71794871794873"/>
-        </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
             <objects>
@@ -309,7 +270,7 @@
                             <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
                         </label>
                         <button width="1" alignment="left" title="Restart" id="lWP-oJ-898">
-                            <color key="backgroundColor" red="0.0" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.0" green="0.80000000000000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="font" type="boldSystem" pointSize="16"/>
                             <variation key="device=watch38mm">
                                 <fontDescription key="font" type="boldSystem" pointSize="16"/>
