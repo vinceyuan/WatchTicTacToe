@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6138CA361D9ABF7A003E6048 /* WatchTicTacToe WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 61C84AA01A8206F0005E9B1C /* WatchTicTacToe WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6138CA391D9ABF7A003E6048 /* WatchTicTacToe WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 61C84AB21A8206F0005E9B1C /* WatchTicTacToe WatchKit App.app */; };
 		61C84A791A8206A5005E9B1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C84A781A8206A5005E9B1C /* main.m */; };
 		61C84A7C1A8206A5005E9B1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C84A7B1A8206A5005E9B1C /* AppDelegate.m */; };
 		61C84A7F1A8206A5005E9B1C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C84A7E1A8206A5005E9B1C /* ViewController.m */; };
@@ -17,14 +19,26 @@
 		61C84AA71A8206F0005E9B1C /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C84AA61A8206F0005E9B1C /* InterfaceController.m */; };
 		61C84AAA1A8206F0005E9B1C /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C84AA91A8206F0005E9B1C /* NotificationController.m */; };
 		61C84AAF1A8206F0005E9B1C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C84AAE1A8206F0005E9B1C /* Images.xcassets */; };
-		61C84AB31A8206F0005E9B1C /* WatchTicTacToe WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 61C84AB21A8206F0005E9B1C /* WatchTicTacToe WatchKit App.app */; };
 		61C84ABB1A8206F0005E9B1C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61C84AB91A8206F0005E9B1C /* Interface.storyboard */; };
 		61C84ABD1A8206F0005E9B1C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C84ABC1A8206F0005E9B1C /* Images.xcassets */; };
-		61C84AC01A8206F0005E9B1C /* WatchTicTacToe WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 61C84AA01A8206F0005E9B1C /* WatchTicTacToe WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		61C84ACA1A82642C005E9B1C /* ResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C84AC91A82642C005E9B1C /* ResultController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		6138CA341D9ABF7A003E6048 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61C84A6B1A8206A5005E9B1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61C84A9F1A8206F0005E9B1C;
+			remoteInfo = "WatchTicTacToe WatchKit Extension";
+		};
+		6138CA371D9ABF7A003E6048 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61C84A6B1A8206A5005E9B1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61C84AB11A8206F0005E9B1C;
+			remoteInfo = "WatchTicTacToe WatchKit App";
+		};
 		61C84A8D1A8206A5005E9B1C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 61C84A6B1A8206A5005E9B1C /* Project object */;
@@ -32,32 +46,29 @@
 			remoteGlobalIDString = 61C84A721A8206A5005E9B1C;
 			remoteInfo = WatchTicTacToe;
 		};
-		61C84AB41A8206F0005E9B1C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 61C84A6B1A8206A5005E9B1C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 61C84AB11A8206F0005E9B1C;
-			remoteInfo = "WatchTicTacToe WatchKit App";
-		};
-		61C84ABE1A8206F0005E9B1C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 61C84A6B1A8206A5005E9B1C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 61C84A9F1A8206F0005E9B1C;
-			remoteInfo = "WatchTicTacToe WatchKit Extension";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		61C84AC71A8206F0005E9B1C /* Embed App Extensions */ = {
+		6138CA3A1D9ABF7A003E6048 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				61C84AC01A8206F0005E9B1C /* WatchTicTacToe WatchKit Extension.appex in Embed App Extensions */,
+				6138CA361D9ABF7A003E6048 /* WatchTicTacToe WatchKit Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6138CA3B1D9ABF7A003E6048 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				6138CA391D9ABF7A003E6048 /* WatchTicTacToe WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -232,12 +243,12 @@
 				61C84A6F1A8206A5005E9B1C /* Sources */,
 				61C84A701A8206A5005E9B1C /* Frameworks */,
 				61C84A711A8206A5005E9B1C /* Resources */,
-				61C84AC71A8206F0005E9B1C /* Embed App Extensions */,
+				6138CA3B1D9ABF7A003E6048 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				61C84ABF1A8206F0005E9B1C /* PBXTargetDependency */,
+				6138CA381D9ABF7A003E6048 /* PBXTargetDependency */,
 			);
 			name = WatchTicTacToe;
 			productName = WatchTicTacToe;
@@ -273,27 +284,28 @@
 			buildRules = (
 			);
 			dependencies = (
-				61C84AB51A8206F0005E9B1C /* PBXTargetDependency */,
 			);
 			name = "WatchTicTacToe WatchKit Extension";
 			productName = "WatchTicTacToe WatchKit Extension";
 			productReference = 61C84AA01A8206F0005E9B1C /* WatchTicTacToe WatchKit Extension.appex */;
-			productType = "com.apple.product-type.watchkit-extension";
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 		61C84AB11A8206F0005E9B1C /* WatchTicTacToe WatchKit App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 61C84AC11A8206F0005E9B1C /* Build configuration list for PBXNativeTarget "WatchTicTacToe WatchKit App" */;
 			buildPhases = (
 				61C84AB01A8206F0005E9B1C /* Resources */,
+				6138CA3A1D9ABF7A003E6048 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6138CA351D9ABF7A003E6048 /* PBXTargetDependency */,
 			);
 			name = "WatchTicTacToe WatchKit App";
 			productName = "WatchTicTacToe WatchKit App";
 			productReference = 61C84AB21A8206F0005E9B1C /* WatchTicTacToe WatchKit App.app */;
-			productType = "com.apple.product-type.application.watchapp";
+			productType = "com.apple.product-type.application.watchapp2";
 		};
 /* End PBXNativeTarget section */
 
@@ -301,7 +313,7 @@
 		61C84A6B1A8206A5005E9B1C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0800;
 				TargetAttributes = {
 					61C84A721A8206A5005E9B1C = {
 						CreatedOnToolsVersion = 6.2;
@@ -362,7 +374,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				61C84AAF1A8206F0005E9B1C /* Images.xcassets in Resources */,
-				61C84AB31A8206F0005E9B1C /* WatchTicTacToe WatchKit App.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,20 +420,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		6138CA351D9ABF7A003E6048 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61C84A9F1A8206F0005E9B1C /* WatchTicTacToe WatchKit Extension */;
+			targetProxy = 6138CA341D9ABF7A003E6048 /* PBXContainerItemProxy */;
+		};
+		6138CA381D9ABF7A003E6048 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61C84AB11A8206F0005E9B1C /* WatchTicTacToe WatchKit App */;
+			targetProxy = 6138CA371D9ABF7A003E6048 /* PBXContainerItemProxy */;
+		};
 		61C84A8E1A8206A5005E9B1C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 61C84A721A8206A5005E9B1C /* WatchTicTacToe */;
 			targetProxy = 61C84A8D1A8206A5005E9B1C /* PBXContainerItemProxy */;
-		};
-		61C84AB51A8206F0005E9B1C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 61C84AB11A8206F0005E9B1C /* WatchTicTacToe WatchKit App */;
-			targetProxy = 61C84AB41A8206F0005E9B1C /* PBXContainerItemProxy */;
-		};
-		61C84ABF1A8206F0005E9B1C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 61C84A9F1A8206F0005E9B1C /* WatchTicTacToe WatchKit Extension */;
-			targetProxy = 61C84ABE1A8206F0005E9B1C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -467,15 +478,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -508,8 +523,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -517,6 +534,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -536,6 +554,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WatchTicTacToe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "vinceyuan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -546,6 +565,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WatchTicTacToe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "vinceyuan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -564,6 +584,7 @@
 				);
 				INFOPLIST_FILE = WatchTicTacToeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "vinceyuan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchTicTacToe.app/WatchTicTacToe";
 			};
@@ -579,6 +600,7 @@
 				);
 				INFOPLIST_FILE = WatchTicTacToeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "vinceyuan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchTicTacToe.app/WatchTicTacToe";
 			};
@@ -595,10 +617,12 @@
 				);
 				IBSC_MODULE = WatchTicTacToe_WatchKit_Extension;
 				INFOPLIST_FILE = "WatchTicTacToe WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = vinceyuan.WatchTicTacToe.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -609,10 +633,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				IBSC_MODULE = WatchTicTacToe_WatchKit_Extension;
 				INFOPLIST_FILE = "WatchTicTacToe WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = vinceyuan.WatchTicTacToe.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -625,8 +651,12 @@
 				);
 				INFOPLIST_FILE = "WatchTicTacToe WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vinceyuan.WatchTicTacToe.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -635,8 +665,12 @@
 			buildSettings = {
 				INFOPLIST_FILE = "WatchTicTacToe WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vinceyuan.WatchTicTacToe.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
