@@ -205,10 +205,8 @@ class InterfaceController: WKInterfaceController {
             condition
             || (matrix[0] == value && matrix[4] == value && matrix[8] == value)
             || (matrix[2] == value && matrix[4] == value && matrix[6] == value)
-        if condition {
-                return true
-        }
-        return false
+        
+        return condition
     }
 
     func nextIndexToWin() -> Int {
@@ -220,16 +218,18 @@ class InterfaceController: WKInterfaceController {
     }
 
     func nextIndexToHave3InLine(_ value : Int) -> Int {
-        var matrix = [Int](repeating: 0, count: 9)
-        for i in 0 ..< 9 {
-            for i in 0 ..< 9 {
-                matrix[i] = _matrix[i]
-            }
+       
+	var matrix = [Int](repeating: 0, count: 9)
+	for i in 0 ..< 9 {
+		matrix[i] = _matrix[i]
+        }
+	for i in 0 ..< 9 {
             if matrix[i] == 0 {
                 matrix[i] = value
                 if has3InLineInMatrix(value, matrix: matrix) {
                     return i
                 }
+		matrix[i] = 0
             }
         }
         return -1
