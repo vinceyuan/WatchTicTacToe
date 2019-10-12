@@ -20,6 +20,7 @@ class InterfaceController: WKInterfaceController {
     var _buttons : Array<WKInterfaceButton?> = []
     var _matrix : Array<Int> = [Int](repeating: 0, count: 9)
     var _shouldPcMove : Bool = false
+    var aiTurn: Bool = false
 
     @IBOutlet weak var _button0 : WKInterfaceButton!
     @IBOutlet weak var _button1 : WKInterfaceButton!
@@ -52,7 +53,11 @@ class InterfaceController: WKInterfaceController {
         }
         _shouldPcMove = (arc4random_uniform(2) != 0)
         if _shouldPcMove {
-            Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(InterfaceController.pcMove), userInfo: nil, repeats: false)
+            aiTurn = true
+            
+            Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { _ in
+                       self.pcMove()
+            }
         }
     }
 
@@ -117,11 +122,20 @@ class InterfaceController: WKInterfaceController {
         }
 
         _shouldPcMove = !_shouldPcMove
-        Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(InterfaceController.checkGameResult), userInfo: nil, repeats: false)
+        
+        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { _ in
+            self.checkGameResult()
+            self.aiTurn = false
+        }
     }
 
     func pressButton(_ button : WKInterfaceButton?) {
-        //let index = find(_buttons, button)
+        
+        // Disable user interactin while AI thinking
+        if aiTurn {
+            return
+        }
+        
         var index = 0
         for (i, value) in _buttons.enumerated() {
             if value!.isEqual(button!) {
@@ -136,7 +150,12 @@ class InterfaceController: WKInterfaceController {
         _matrix[index] = 1
         button!.setTitle("💩")
         _shouldPcMove = !_shouldPcMove
-        Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(InterfaceController.checkGameResult), userInfo: nil, repeats: false)
+        
+        aiTurn = true
+        
+        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { _ in
+            self.checkGameResult()
+        }
     }
 
     func checkGameResult() {
