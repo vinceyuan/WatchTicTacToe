@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15400" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch40"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11077"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15400"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
@@ -10,7 +12,7 @@
             <objects>
                 <controller spacing="2" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchTicTacToe_WatchKit_Extension">
                     <items>
-                        <label width="1" alignment="left" text="TicTacToe" textAlignment="center" id="PLT-GS-ugN">
+                        <label width="1" alignment="center" text="TicTacToe" textAlignment="center" id="PLT-GS-ugN">
                             <color key="textColor" red="0.0" green="0.80000000000000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="font" type="boldSystem" pointSize="13"/>
                             <variation key="device=watch38mm">
@@ -20,169 +22,109 @@
                                 <fontDescription key="font" type="boldSystem" pointSize="14"/>
                             </variation>
                         </label>
-                        <group width="1" alignment="left" layout="vertical" spacing="2" id="jiy-GM-Pb7">
+                        <group width="1" height="1" alignment="center" verticalAlignment="center" contentMode="scaleAspectFit" layout="vertical" spacing="2" id="jiy-GM-Pb7">
                             <items>
-                                <group width="1" height="43" alignment="left" id="XQu-VX-hUM">
+                                <group width="1" height="0.33000000000000002" alignment="center" id="XQu-VX-hUM">
                                     <items>
-                                        <group width="43" height="1" alignment="left" id="rck-w7-GJL">
-                                            <items>
-                                                <button width="1" height="1" alignment="left" title="🐷" id="5Qa-s4-wpc">
-                                                    <fontDescription key="font" type="system" pointSize="31"/>
-                                                    <variation key="device=watch38mm">
-                                                        <fontDescription key="font" type="system" pointSize="31"/>
-                                                    </variation>
-                                                    <variation key="device=watch42mm">
-                                                        <fontDescription key="font" type="system" pointSize="32"/>
-                                                    </variation>
-                                                    <connections>
-                                                        <action selector="pressButton0" destination="AgC-eL-Hgc" id="X0s-O9-rNc"/>
-                                                    </connections>
-                                                </button>
-                                            </items>
-                                            <variation key="device=watch38mm" width="43"/>
-                                            <variation key="device=watch42mm" width="50"/>
-                                        </group>
-                                        <group width="43" height="1" alignment="left" id="KuC-x1-dxA">
-                                            <items>
-                                                <button width="1" height="1" alignment="left" title="🐷" id="QKa-rl-tTb">
-                                                    <fontDescription key="font" type="system" pointSize="31"/>
-                                                    <variation key="device=watch38mm">
-                                                        <fontDescription key="font" type="system" pointSize="31"/>
-                                                    </variation>
-                                                    <variation key="device=watch42mm">
-                                                        <fontDescription key="font" type="system" pointSize="32"/>
-                                                    </variation>
-                                                    <connections>
-                                                        <action selector="pressButton1" destination="AgC-eL-Hgc" id="Z4v-96-Pcp"/>
-                                                    </connections>
-                                                </button>
-                                            </items>
-                                            <variation key="device=watch38mm" width="43"/>
-                                            <variation key="device=watch42mm" width="50"/>
-                                        </group>
-                                        <group width="43" height="1" alignment="left" id="IOW-pJ-TJO">
-                                            <items>
-                                                <button width="1" height="1" alignment="left" title="🐷" id="V4v-pO-Le6">
-                                                    <fontDescription key="font" type="system" pointSize="31"/>
-                                                    <variation key="device=watch38mm">
-                                                        <fontDescription key="font" type="system" pointSize="31"/>
-                                                    </variation>
-                                                    <variation key="device=watch42mm">
-                                                        <fontDescription key="font" type="system" pointSize="32"/>
-                                                    </variation>
-                                                    <connections>
-                                                        <action selector="pressButton2" destination="AgC-eL-Hgc" id="7t6-1G-TH7"/>
-                                                    </connections>
-                                                </button>
-                                            </items>
-                                            <variation key="device=watch38mm" width="43"/>
-                                            <variation key="device=watch42mm" width="50"/>
-                                        </group>
+                                        <button width="0.33000000000000002" height="1" alignment="left" title="🐷" id="5Qa-s4-wpc">
+                                            <fontDescription key="font" type="system" pointSize="31"/>
+                                            <variation key="device=watch38mm">
+                                                <fontDescription key="font" type="system" pointSize="31"/>
+                                            </variation>
+                                            <variation key="device=watch42mm">
+                                                <fontDescription key="font" type="system" pointSize="32"/>
+                                            </variation>
+                                            <connections>
+                                                <action selector="pressButton0" destination="AgC-eL-Hgc" id="X0s-O9-rNc"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33000000000000002" height="1" alignment="left" title="🐷" id="QKa-rl-tTb">
+                                            <fontDescription key="font" type="system" pointSize="31"/>
+                                            <variation key="device=watch38mm">
+                                                <fontDescription key="font" type="system" pointSize="31"/>
+                                            </variation>
+                                            <variation key="device=watch42mm">
+                                                <fontDescription key="font" type="system" pointSize="32"/>
+                                            </variation>
+                                            <connections>
+                                                <action selector="pressButton1" destination="AgC-eL-Hgc" id="Z4v-96-Pcp"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33000000000000002" height="1" alignment="left" title="🐷" id="V4v-pO-Le6">
+                                            <fontDescription key="font" type="system" pointSize="31"/>
+                                            <variation key="device=watch38mm">
+                                                <fontDescription key="font" type="system" pointSize="31"/>
+                                            </variation>
+                                            <variation key="device=watch42mm">
+                                                <fontDescription key="font" type="system" pointSize="32"/>
+                                            </variation>
+                                            <connections>
+                                                <action selector="pressButton2" destination="AgC-eL-Hgc" id="7t6-1G-TH7"/>
+                                            </connections>
+                                        </button>
                                     </items>
-                                    <variation key="device=watch38mm" height="43"/>
-                                    <variation key="device=watch42mm" height="50"/>
                                 </group>
-                                <group width="1" height="43" alignment="left" id="9e2-az-T81">
+                                <group width="1" height="0.33000000000000002" alignment="center" contentMode="scaleAspectFit" id="9e2-az-T81">
                                     <items>
-                                        <group width="43" height="1" alignment="left" id="bKR-yi-XJT">
-                                            <items>
-                                                <button width="1" height="1" alignment="left" title="🐷" id="6bI-ub-pgx">
-                                                    <fontDescription key="font" type="system" pointSize="31"/>
-                                                    <variation key="device=watch42mm">
-                                                        <fontDescription key="font" type="system" pointSize="32"/>
-                                                    </variation>
-                                                    <connections>
-                                                        <action selector="pressButton3" destination="AgC-eL-Hgc" id="vGW-5W-hdx"/>
-                                                    </connections>
-                                                </button>
-                                            </items>
-                                            <variation key="device=watch38mm" width="43"/>
-                                            <variation key="device=watch42mm" width="50"/>
-                                        </group>
-                                        <group width="43" height="1" alignment="left" id="a1A-D0-0EJ">
-                                            <items>
-                                                <button width="1" height="1" alignment="left" title="💩" id="c6I-Ue-p6l">
-                                                    <fontDescription key="font" type="system" pointSize="31"/>
-                                                    <variation key="device=watch42mm">
-                                                        <fontDescription key="font" type="system" pointSize="32"/>
-                                                    </variation>
-                                                    <connections>
-                                                        <action selector="pressButton4" destination="AgC-eL-Hgc" id="691-7R-CNl"/>
-                                                    </connections>
-                                                </button>
-                                            </items>
-                                            <variation key="device=watch38mm" width="43"/>
-                                            <variation key="device=watch42mm" width="50"/>
-                                        </group>
-                                        <group width="43" height="1" alignment="left" id="rha-9x-jXL">
-                                            <items>
-                                                <button width="1" height="1" alignment="left" title="🐷" id="FeS-9o-b5g">
-                                                    <fontDescription key="font" type="system" pointSize="31"/>
-                                                    <variation key="device=watch42mm">
-                                                        <fontDescription key="font" type="system" pointSize="32"/>
-                                                    </variation>
-                                                    <connections>
-                                                        <action selector="pressButton5" destination="AgC-eL-Hgc" id="XXb-Hh-jHN"/>
-                                                    </connections>
-                                                </button>
-                                            </items>
-                                            <variation key="device=watch38mm" width="43"/>
-                                            <variation key="device=watch42mm" width="50"/>
-                                        </group>
+                                        <button width="0.33000000000000002" height="1" alignment="left" title="🐷" id="6bI-ub-pgx">
+                                            <fontDescription key="font" type="system" pointSize="31"/>
+                                            <variation key="device=watch42mm">
+                                                <fontDescription key="font" type="system" pointSize="32"/>
+                                            </variation>
+                                            <connections>
+                                                <action selector="pressButton3" destination="AgC-eL-Hgc" id="vGW-5W-hdx"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33000000000000002" height="1" alignment="left" title="💩" id="c6I-Ue-p6l">
+                                            <fontDescription key="font" type="system" pointSize="31"/>
+                                            <variation key="device=watch42mm">
+                                                <fontDescription key="font" type="system" pointSize="32"/>
+                                            </variation>
+                                            <connections>
+                                                <action selector="pressButton4" destination="AgC-eL-Hgc" id="691-7R-CNl"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33000000000000002" height="1" alignment="left" title="🐷" id="FeS-9o-b5g">
+                                            <fontDescription key="font" type="system" pointSize="31"/>
+                                            <variation key="device=watch42mm">
+                                                <fontDescription key="font" type="system" pointSize="32"/>
+                                            </variation>
+                                            <connections>
+                                                <action selector="pressButton5" destination="AgC-eL-Hgc" id="XXb-Hh-jHN"/>
+                                            </connections>
+                                        </button>
                                     </items>
-                                    <variation key="device=watch38mm" height="43"/>
-                                    <variation key="device=watch42mm" height="50"/>
                                 </group>
-                                <group width="1" height="43" alignment="left" id="Y3Y-Th-vZH">
+                                <group width="1" height="0.33000000000000002" alignment="center" id="Y3Y-Th-vZH">
                                     <items>
-                                        <group width="43" height="1" alignment="left" id="Tp4-2u-Tmz">
-                                            <items>
-                                                <button width="1" height="1" alignment="left" title="🐷" id="edd-YY-9dD">
-                                                    <fontDescription key="font" type="system" pointSize="31"/>
-                                                    <variation key="device=watch42mm">
-                                                        <fontDescription key="font" type="system" pointSize="32"/>
-                                                    </variation>
-                                                    <connections>
-                                                        <action selector="pressButton6" destination="AgC-eL-Hgc" id="gKr-eK-Fhq"/>
-                                                    </connections>
-                                                </button>
-                                            </items>
-                                            <variation key="device=watch38mm" width="43"/>
-                                            <variation key="device=watch42mm" width="50"/>
-                                        </group>
-                                        <group width="43" height="1" alignment="left" id="afy-05-4zS">
-                                            <items>
-                                                <button width="1" height="1" alignment="left" title="🐷" id="ToD-kn-XKJ">
-                                                    <fontDescription key="font" type="system" pointSize="31"/>
-                                                    <variation key="device=watch42mm">
-                                                        <fontDescription key="font" type="system" pointSize="32"/>
-                                                    </variation>
-                                                    <connections>
-                                                        <action selector="pressButton7" destination="AgC-eL-Hgc" id="5jp-sN-df8"/>
-                                                    </connections>
-                                                </button>
-                                            </items>
-                                            <variation key="device=watch38mm" width="43"/>
-                                            <variation key="device=watch42mm" width="50"/>
-                                        </group>
-                                        <group width="43" height="1" alignment="left" id="Byw-uu-ZiK">
-                                            <items>
-                                                <button width="1" height="1" alignment="left" title="🐷" id="Du6-L7-Soe">
-                                                    <fontDescription key="font" type="system" pointSize="31"/>
-                                                    <variation key="device=watch42mm">
-                                                        <fontDescription key="font" type="system" pointSize="32"/>
-                                                    </variation>
-                                                    <connections>
-                                                        <action selector="pressButton8" destination="AgC-eL-Hgc" id="QNC-DO-HxN"/>
-                                                    </connections>
-                                                </button>
-                                            </items>
-                                            <variation key="device=watch38mm" width="43"/>
-                                            <variation key="device=watch42mm" width="50"/>
-                                        </group>
+                                        <button width="0.33000000000000002" height="1" alignment="left" title="🐷" id="edd-YY-9dD">
+                                            <fontDescription key="font" type="system" pointSize="31"/>
+                                            <variation key="device=watch42mm">
+                                                <fontDescription key="font" type="system" pointSize="32"/>
+                                            </variation>
+                                            <connections>
+                                                <action selector="pressButton6" destination="AgC-eL-Hgc" id="gKr-eK-Fhq"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33000000000000002" height="1" alignment="left" title="🐷" id="ToD-kn-XKJ">
+                                            <fontDescription key="font" type="system" pointSize="31"/>
+                                            <variation key="device=watch42mm">
+                                                <fontDescription key="font" type="system" pointSize="32"/>
+                                            </variation>
+                                            <connections>
+                                                <action selector="pressButton7" destination="AgC-eL-Hgc" id="5jp-sN-df8"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33000000000000002" height="1" alignment="left" title="🐷" id="Du6-L7-Soe">
+                                            <fontDescription key="font" type="system" pointSize="31"/>
+                                            <variation key="device=watch42mm">
+                                                <fontDescription key="font" type="system" pointSize="32"/>
+                                            </variation>
+                                            <connections>
+                                                <action selector="pressButton8" destination="AgC-eL-Hgc" id="QNC-DO-HxN"/>
+                                            </connections>
+                                        </button>
                                     </items>
-                                    <variation key="device=watch38mm" height="43"/>
-                                    <variation key="device=watch42mm" height="50"/>
                                 </group>
                             </items>
                         </group>
@@ -200,7 +142,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="235" y="347"/>
+            <point key="canvasLocation" x="234.30434782608694" y="346.83035714285717"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -301,7 +243,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="434.15384615384619" y="345.66666666666669"/>
+            <point key="canvasLocation" x="476" y="347"/>
         </scene>
     </scenes>
 </document>
